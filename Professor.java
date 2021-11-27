@@ -13,7 +13,7 @@ public class Professor extends Funcionario{
 
     public void avaliar(List<Aluno> alunos){
         for (Aluno aluno : alunos) {
-            if (aluno.getNota() >= 6) {
+            if (aluno.getNota() >= 7) {
                 System.out.println("Aluno matriculado: " + aluno.getMatricula() + " - " + aluno.getNome() + " " + aluno.getSobrenome() + ", parabéns você foi aprovado(a).");
             } else {
                 System.out.println("Aluno matriculado: " + aluno.getMatricula() + " - " + aluno.getNome() + " " + aluno.getSobrenome() + ". Sua nota foi abaixo da média, precisa estudar mais.");

@@ -55,7 +55,4 @@ abstract class Pessoa {
         this.endereco = endereco;
     }
 
-    public void comparecer(){
-        System.out.println("Compareceu a escola");
-    }
 }

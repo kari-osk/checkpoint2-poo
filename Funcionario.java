@@ -11,6 +11,22 @@ public class Funcionario extends Pessoa{
         this.cargo = cargo;
         this.salario = salario;
     }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public int getNumeroRegistro() {
+        return numeroRegistro;
+    }
+
+    public void setNumeroRegistro(int numeroRegistro) {
+        this.numeroRegistro = numeroRegistro;
+    }
 }
 
 

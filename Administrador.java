@@ -1,5 +1,6 @@
 package CheckpointPoo;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Administrador extends Funcionario{
@@ -8,31 +9,15 @@ public class Administrador extends Funcionario{
         super(nome, sobrenome, cpf, numeroCelular, endereco, numeroRegistro, cargo, salario);
     }
 
-    public void auxiliarFinanceiro(){
-        System.out.println("Funcionário da administração auxilia a diretoria na área financeira.");
+    public void pagarProfessor(List<Professor>professores){
+        double total = 0.00;
+        for (Professor professor: professores) {
+            System.out.println("Prof. codigo: " + professor.getNumeroRegistro() + " - " + professor.getNome() + " " + professor.getSobrenome() + ". Salário de R$ " + professor.getSalario());
+            total += professor.salario;
+        }
+        System.out.println();
+        System.out.println("Pagar valor total de R$ " + total + " em salários aos professores.");
     }
 
-    public void administrar(){
-        System.out.println("Funcionário administra todos os documentos da escola");
-    }
 
-    public void cadastrar() {
-        Scanner entrada = new Scanner(System.in);
-
-        System.out.println("Digite o nome: ");
-        this.nome = entrada.nextLine();
-
-        System.out.println("Digite o sobrenome: ");
-        this.sobrenome = entrada.nextLine();
-
-        System.out.println("Digite o número do CPF: ");
-        this.cpf = entrada.nextInt();
-
-        System.out.println("Digite o número do telefone: ");
-        this.numeroCelular = entrada.nextInt();
-
-        System.out.println("Digite o endereço: ");
-        this.endereco = entrada.nextLine();
-
-    }
 }
