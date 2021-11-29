@@ -15,8 +15,7 @@ public class Administrador extends Funcionario{
             System.out.println("Prof. codigo: " + professor.getNumeroRegistro() + " - " + professor.getNome() + " " + professor.getSobrenome() + ". Salário de R$ " + professor.getSalario());
             total += professor.salario;
         }
-        System.out.println();
-        System.out.println("Pagar valor total de R$ " + total + " em salários aos professores.");
+        System.out.println("Pagar o valor total de R$ " + total + " em salários aos professores.");
     }
 
 

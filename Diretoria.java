@@ -9,7 +9,6 @@ public class Diretoria extends Pessoa{
         this.salario = salario;
     }
 
-
        public void administrarFinanceiro(){
                 System.out.println("Diretor(a) " + getNome() + " " + getSobrenome()+ " administra o financeiro.");
     }

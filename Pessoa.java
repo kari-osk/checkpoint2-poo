@@ -1,6 +1,6 @@
 package CheckpointPoo;
 
-abstract class Pessoa {
+public abstract class Pessoa {
     protected String nome;
     protected String sobrenome;
     protected int cpf;
@@ -54,5 +54,4 @@ abstract class Pessoa {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
-
 }

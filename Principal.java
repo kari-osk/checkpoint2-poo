@@ -15,7 +15,7 @@ public class Principal {
 //Disciplina:
 
         Disciplina disciplina1 = new Disciplina("POO", "Programação orientada a objetos", "570 horas");
-        Disciplina disciplina2 = new Disciplina("FE", "Front-end", "420 horas");
+        Disciplina disciplina2 = new Disciplina("Testing", "Teste de código.", "420 horas");
 
 //Turma e método:
 
@@ -54,12 +54,12 @@ public class Principal {
 
         Professor professor1 = new Professor("Celso", "Pinheiro", 22456554, 990454545, "Av.Paulista, 1542", 54,
                 "Docente 1", 9540, "Mestre");
-        Professor professor2 = new Professor("Michele", "Silva", 457815487,998721452,"Av.Fagundes Filho, 65", 54,
+        Professor professor2 = new Professor("Michele", "Silva", 457815487,998721452,"Av.Fagundes Filho, 65", 68,
                 "Docente 3", 11570,"Mestre" );
         Professor professor3 = new Professor("Renata", "Almeida", 154785654, 998745214, "Av. J.J. Rodrigues, 4587",35,
                 "Docente 2",8579, "Mestre");
 
-        professor1.avaliar(alunos);
+        professor1.avaliarAluno(alunos);
 
 //lista professores
 
@@ -74,7 +74,7 @@ public class Principal {
 
         Administrador administrador1 = new Administrador("Carlos", "Pereira", 254874851, 998784522, "Rua Holanda, 48",
                 328, "Administrativo II", 3580);
-
+        System.out.println();
         administrador1.pagarProfessor(professores);
     }
 }
