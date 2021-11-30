@@ -65,7 +65,7 @@ public class Principal {
 
 //Class Turma:
 
-        System.out.println("Pesquisar código da turma.");
+        System.out.println("Método pesquisar código da turma.");
         Turma turma1 = new Turma("A1", disciplina1, 36, 2);
 
         //Método pesquisar código da turma
@@ -81,18 +81,19 @@ public class Principal {
         Aluno aluno3 = new Aluno("Cintia", "Souza", "365.745.951-81", "(11)96545-2158", "Av.Jabaquara, 981", "M154", 5, turma1);
         Aluno aluno4 = new Aluno("Daniel", "Brito", "452.451.286-57", "(11)99512-4785", "Av.Domingos de Morais, 1543", "M220", 10, turma1);
 
-        System.out.println("Lista de alunos");
-        List<Aluno> alunos = new ArrayList<>();
 
+        List<Aluno> alunos = new ArrayList<>();
         alunos.add(aluno1);
         alunos.add(aluno2);
         alunos.add(aluno3);
         alunos.add(aluno4);
 
         System.out.println("-----------------------------------------------------------------------------------");
-        System.out.println();
 
 //Class Professor:
+        System.out.println("Métodos da class Professor");
+        System.out.println("Lista de alunos");
+        System.out.println();
 
         Professor professor1 = new Professor("Celso", "Pinheiro", "224.565.547-75", "(11)99045-4545", "Av.Paulista, 1542", 54,
                 "Docente 1", 9540, "Mestre");
@@ -101,6 +102,7 @@ public class Principal {
         Professor professor3 = new Professor("Renata", "Almeida", "154.785.654-11", "(11)99874-5214", "Av. J.J. Rodrigues, 4587", 35,
                 "Docente 2", 8579, "Mestre");
 
+        System.out.println();
         professor1.avaliarAluno(alunos);
         System.out.println();
 
@@ -111,10 +113,8 @@ public class Principal {
         //Método para verificar a batida de ponto.
         professor1.baterPonto(2);
 
-        System.out.println("-----------------------------------------------------------------------------------");
-
         //lista de professores
-        System.out.println("Lista de professores");
+
 
         List<Professor> professores = new ArrayList<>();
         professores.add(professor1);
@@ -122,15 +122,25 @@ public class Principal {
         professores.add(professor3);
 
         System.out.println("-----------------------------------------------------------------------------------");
-
 //Class Administrador:
+        System.out.println("Métodos da class Administrador");
+        System.out.println("Lista de professores");
 
         Administrador administrador1 = new Administrador("Carlos", "Pereira", "254.874.851-82", "(11)99878-4522", "Rua Holanda, 48",
                 328, "Administrativo II", 3580);
-        System.out.println();
 
+        System.out.println();
+        System.out.println();
         //Método pagarProfessores:
         administrador1.pagarProfessor(professores);
+        System.out.println();
+
+        //Método para verificar a batida de ponto.
+        administrador1.baterPonto(9);
+        System.out.println();
+
+        //Método para verificar a entrega de relatórios
+        administrador1.entregarRelatorio(3);
 
    }
 }

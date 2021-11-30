@@ -18,9 +18,9 @@ public class Professor extends Funcionario{
     public void baterPonto(double horas) {
         double total = 6.00;
         if(horas < total) {
-            System.out.println("Você ainda precisa trabalhar " + (total - horas) + " horas hoje.");
+            System.out.println("Professor(a), você ainda precisa trabalhar " + (total - horas) + " horas hoje.");
         } else {
-            System.out.println("Obrigado e até amamhã.");
+            System.out.println("Professor(a) seu turno foi completo, até amamhã.");
         }
     }
 
@@ -28,9 +28,9 @@ public class Professor extends Funcionario{
     public void entregarRelatorio(int quantidade) {
         int total = 4;
         if(quantidade < total){
-            System.out.println("Faltam entregar " + (total - quantidade) + " relatórios de aula");
+            System.out.println("Professor(a), faltam entregar " + (total - quantidade) + " relatórios de aula");
         }else {
-            System.out.println("Relatórios entregues.");
+            System.out.println("Professor(a), relatórios entregues.");
         }
     }
 

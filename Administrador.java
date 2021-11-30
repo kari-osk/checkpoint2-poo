@@ -26,9 +26,9 @@ public class Administrador extends Funcionario{
     public void baterPonto(double horas) {
         double total = 8.00;
         if(horas < total) {
-            System.out.println("Você ainda precisa trabalhar " + (horas - total) + " horas hoje.");
+            System.out.println("Administrador(a), você ainda precisa trabalhar " + (horas - total) + " horas hoje.");
         } else {
-            System.out.println("Obrigado e até amamhã!");
+            System.out.println("Administrador(a) seu turno foi completo, até amamhã.");
         }
 
     }
@@ -37,9 +37,9 @@ public class Administrador extends Funcionario{
     public void entregarRelatorio(int quantidade) {
         int total = 6;
         if (quantidade < total) {
-            System.out.println("Faltam entregar " + (total - quantidade) + " relatórios administrativos");
+            System.out.println("Administrador(a), faltam entregar " + (total - quantidade) + " relatórios");
         } else {
-            System.out.println("Relatórios entregues.");
+            System.out.println("Administrador(a), relatórios entregues.");
         }
     }
 }
