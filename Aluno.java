@@ -5,7 +5,7 @@ public class Aluno extends Pessoa {
     private int nota;
     private Turma turma;
 
-    public Aluno(String nome, String sobrenome, int cpf, int numeroCelular, String endereco, String matricula, int nota, Turma turma) {
+    public Aluno(String nome, String sobrenome, String cpf, String numeroCelular, String endereco, String matricula, int nota, Turma turma) {
         super(nome, sobrenome, cpf, numeroCelular, endereco);
         this.matricula = matricula;
         this.nota = nota;

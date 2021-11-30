@@ -3,11 +3,11 @@ package CheckpointPoo;
 public abstract class Pessoa {
     protected String nome;
     protected String sobrenome;
-    protected int cpf;
-    protected int numeroCelular;
+    protected String cpf;
+    protected String numeroCelular;
     protected String endereco;
 
-    public Pessoa(String nome, String sobrenome, int cpf, int numeroCelular, String endereco) {
+    public Pessoa(String nome, String sobrenome, String cpf, String numeroCelular, String endereco) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.cpf = cpf;
@@ -31,19 +31,19 @@ public abstract class Pessoa {
         this.sobrenome = sobrenome;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
-    public int getNumeroCelular() {
+    public String getNumeroCelular() {
         return numeroCelular;
     }
 
-    public void setNumeroCelular(int numeroCelular) {
+    public void setNumeroCelular(String numeroCelular) {
         this.numeroCelular = numeroCelular;
     }
 

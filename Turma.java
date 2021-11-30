@@ -1,13 +1,14 @@
 package CheckpointPoo;
 
-public class Turma {
+import java.util.Scanner;
 
+public class Turma {
     private String codigo;
-    private Disciplina disciplina;
+    private Scanner disciplina;
     private int quantAulaOnline;
     private int getQuantAulaPresencial;
 
-    public Turma(String codigo, Disciplina disciplina, int quantAulaOnline, int getQuantAulaPresencial) {
+    public Turma(String codigo, Scanner disciplina, int quantAulaOnline, int getQuantAulaPresencial) {
         this.codigo = codigo;
         this.disciplina = disciplina;
         this.quantAulaOnline = quantAulaOnline;
@@ -22,11 +23,11 @@ public class Turma {
         this.codigo = codigo;
     }
 
-    public Disciplina getDisciplina() {
+    public Scanner getDisciplina() {
         return disciplina;
     }
 
-    public void setDisciplina(Disciplina disciplina) {
+    public void setDisciplina(Scanner disciplina) {
         this.disciplina = disciplina;
     }
 
@@ -46,12 +47,10 @@ public class Turma {
         this.getQuantAulaPresencial = getQuantAulaPresencial;
     }
 
+//  Método para pesquisar o dódigo da turma:
+
     public void pesquisarCodigo(){
         System.out.println("O código da turma é " + getCodigo() + ".");
     }
-    public void pesquisarDisciplina(){
-        System.out.println("A turma possui a disciplina de " + disciplina.getNomeDisciplina() + ".");
-    }
-
 }
 

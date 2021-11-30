@@ -3,12 +3,12 @@ package CheckpointPoo;
 public class Disciplina {
     private String nomeDisciplina;
     private String descricao;
-    private String cargaHoraria;
+    private int quantTotalAulas;
 
-    public Disciplina(String nomeDisciplina, String descricao, String cargaHoraria) {
+    public Disciplina(String nomeDisciplina, String descricao, int quantTotalAulas) {
         this.nomeDisciplina = nomeDisciplina;
         this.descricao = descricao;
-        this.cargaHoraria = cargaHoraria;
+        this.quantTotalAulas = quantTotalAulas;
     }
 
     public String getNomeDisciplina() {
@@ -19,4 +19,19 @@ public class Disciplina {
         this.nomeDisciplina = nomeDisciplina;
     }
 
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public int getQuantTotalAulas() {
+        return quantTotalAulas;
+    }
+
+    public void setQuantTotalAulas(int quantTotalAulas) {
+        this.quantTotalAulas = quantTotalAulas;
+    }
 }
